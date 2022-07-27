@@ -56,9 +56,11 @@
 
   transition: transform var(--anim);
 
-  &.is-open {
-    transform: translateX(0);
-  }
+  @media screen and (max-width: 767px) {
+    &.is-open {
+      transform: translateX(0);
+    }
+  }  
 }
 
 .mobile-menu-nav {

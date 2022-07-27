@@ -9,28 +9,46 @@
 }
 
 .div-btn {
-  margin-bottom: 50px;
+  display: flex;
+  margin-bottom: 40px;
+
+  @media screen and (max-width: 767px) {
+    height: 91px;
+    align-content: space-between;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px; 
+    justify-content: center;   
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .btn-list {
   display: flex;
 
-  @media screen and (min-width: 480px) {
-    flex-wrap: wrap;
-    height: 55px;
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;    
   }
 
-  @media screen and (min-width: 768px) {
-    justify-content: center;
-  }
+  @media screen and (max-width: 767px) {
+        align-content: space-between;
+  }  
+}
+
+.btn-item {
+  display: block;
 }
 
 .btn-list .btn-item:not(:last-child) {
   margin-right: 8px;
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    margin-bottom: 15px;
-  }
+  // @media screen and (min-width: 480px) and (max-width: 767px) {
+  //   margin-bottom: 15px;
+  // }
 }
 
 // .btn-list .btn-item:last-child {
