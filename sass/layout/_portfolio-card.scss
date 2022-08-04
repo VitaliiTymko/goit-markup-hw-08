@@ -8,6 +8,7 @@
     width: 450px;
 
     @media screen and (min-width: 768px) {
+      display: flex;
       width: 354px;
     }
   
@@ -17,7 +18,8 @@
 }
   
   .link-port {
-    display: block;
+    display: flex;
+    flex-direction: column;
   
     transition: box-shadow var(--anim);
   }
@@ -29,6 +31,7 @@
   }
   
   .card {
+    flex-grow: 1;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-right: 24px;
